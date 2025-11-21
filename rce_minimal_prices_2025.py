@@ -1,4 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/rce_minimal_prices_2025.py b/rce_minimal_prices_2025.py
 new file mode 100644
 index 0000000000000000000000000000000000000000..ae573736488b45b9862c490900b7eba8cf8643c3
@@ -134,6 +133,3 @@ index 0000000000000000000000000000000000000000..ae573736488b45b9862c490900b7eba8
 +    except Exception as exc:  # przechwycenie niespodziewanych błędów na poziomie głównym
 +        print(exc, file=sys.stderr)
 +        sys.exit(1)
- 
-EOF
-)
